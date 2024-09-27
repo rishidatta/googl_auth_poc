@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { GoogleAuthService } from './google-auth.service';
-import { GoogleAuthController } from './google-auth.controller';
-import { UserController } from './user.controller';
-import { UserService } from './user.service';
+import { GoogleAuthService } from './service/google-auth.service';
+import { GoogleAuthController } from './controller/google-auth.controller';
+import { UserController } from './controller/user.controller';
+import { UserService } from './service/user.service';
 
 @Module({
   imports: [],

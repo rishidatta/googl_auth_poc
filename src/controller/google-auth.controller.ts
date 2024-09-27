@@ -7,9 +7,9 @@ import {
   Res,
   UseGuards,
 } from '@nestjs/common';
-import { GoogleAuthService } from './google-auth.service';
+import { GoogleAuthService } from '../service/google-auth.service';
 import { Response } from 'express';
-import { GoogleCustomBearerStratergy } from './google-oauth.guard';
+import { GoogleCustomBearerStratergy } from '../auth-guard/google-oauth.guard';
 
 @Controller('auth')
 export class GoogleAuthController {

@@ -9,9 +9,9 @@ import {
   Query,
   Req,
 } from '@nestjs/common';
-import { GoogleCustomBearerStratergy } from './google-oauth.guard';
+import { GoogleCustomBearerStratergy } from '../auth-guard/google-oauth.guard';
 import { Response } from 'express';
-import { UserService } from './user.service';
+import { UserService } from '../service/user.service';
 
 @Controller('users')
 export class UserController {

@@ -35,7 +35,7 @@ export class GoogleCustomBearerStratergy implements CanActivate {
 
   private extractTokenFromHeader(authHeader: string): string {
     if (authHeader.startsWith('Bearer ')) {
-      return authHeader.split(' ')[1]; // Get the token after "Bearer "
+      return authHeader.split(' ')[1];
     }
     return null;
   }

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { O_AUTH_CLIENT as oauth2Client } from './googleOauth.client';
+import { O_AUTH_CLIENT as oauth2Client } from '../auth-guard/googleOauth.client';
 import * as dotenv from 'dotenv';
 dotenv.config();
 

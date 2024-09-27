@@ -1,6 +1,6 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { google } from 'googleapis';
-import { SERVICE_ACCOUNT_CLIENT as serviceAccountClient } from './googleOauth.client';
+import { SERVICE_ACCOUNT_CLIENT as serviceAccountClient } from '../auth-guard/googleOauth.client';
 
 @Injectable()
 export class UserService {
